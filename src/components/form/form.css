@@ -48,3 +48,11 @@
   color: white;
   border: none;
 }
+
+.error__message {
+  position: absolute;
+  font-size: 6px;
+  color: red;
+  padding: 0;
+  margin: 0;
+}
