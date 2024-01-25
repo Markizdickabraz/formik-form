@@ -1,0 +1,14 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d09c9c;
+  padding: 100px;
+  background: white;
+}
+
+.form__label {
+  text-align: start;
+  padding-top: 10px;
+  font-size: 12px;
+  padding-bottom: 4px;
+}
