@@ -14,21 +14,24 @@ function FormComponent() {
         console.log(JSON.stringify(values, null, 2));
       }}
     >
-      <Form class='form'>
+          <Form className='form'>
+              <h1 className='form__title'>Register</h1>
         <label className='form__label' htmlFor="firstName">First Name</label>
-        <Field id="firstName" name="firstName" placeholder="Jane" />
+        <Field  className='form__input' id="firstName" name="firstName" placeholder="Jane" />
 
         <label className='form__label' htmlFor="lastName">Last Name</label>
-        <Field id="lastName" name="lastName" placeholder="Doe" />
+        <Field  className='form__input' id="lastName" name="lastName" placeholder="Doe" />
 
         <label className='form__label' htmlFor="email">Email</label>
-        <Field
+        <Field className='form__input' 
           id="email"
           name="email"
           placeholder="jane@acme.com"
           type="email"
         />
-        <button type="submit">Submit</button>
+              <div className='btn__container'>
+                  <button className='btn' type="submit">Submit</button>
+              </div>
       </Form>
     </Formik>
   )
